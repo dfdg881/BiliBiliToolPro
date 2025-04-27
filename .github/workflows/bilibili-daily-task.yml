@@ -66,8 +66,8 @@ jobs:
       result: ${{ steps.check.outputs.result }} # Transmitting the value via outputs
     steps:
     - id: check
-      run: echo "result=开启" >> $GITHUB_ENV
-
+      run: echo "result=开启" >> $GITHUB_OUTPUT
+      
   run-daily-task:
 
     runs-on: ubuntu-latest
